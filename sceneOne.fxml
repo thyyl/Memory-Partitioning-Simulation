@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="500.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="700.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#7c98b3" />
+                        <Stop color="#9dc5c3" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Rectangle>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="66.0" layoutX="228.0" layoutY="112.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="405.0" />
+        <Label layoutX="126.0" layoutY="272.0" text="Load MemoryList.txt" textFill="WHITE">
+            <font>
+                <Font name="DengXian Light" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="242.0" layoutY="127.0" text="Memory Allocation Simulation" textFill="WHITE">
+            <font>
+                <Font name="DengXian Light" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="475.0" layoutY="188.0" text="CST 232 Operating System" textFill="WHITE">
+            <font>
+                <Font name="DengXian Light" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="535.0" layoutY="312.0" mnemonicParsing="false" onAction="#loadMemoryList" prefWidth="100.0" styleClass="lion" stylesheets="@../sample.css" text="Browse" />
+        <Line endX="182.5999755859375" layoutX="451.0" layoutY="287.0" startX="-90.99996948242188" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0" />
+        <Line endX="-47.400001525878906" layoutX="141.0" layoutY="288.0" startX="-100.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0" />
+        <Button layoutX="597.0" layoutY="446.0" mnemonicParsing="false" onAction="#left" prefWidth="38.0" styleClass="glass-grey" stylesheets="@../sample.css" text="&gt;" />
+        <Label layoutX="126.0" layoutY="344.0" text="Load JobList.txt" textFill="WHITE">
+            <font>
+                <Font name="DengXian Light" size="24.0" />
+            </font>
+        </Label>
+        <Line endX="182.5999755859375" layoutX="451.0" layoutY="359.0" startX="-140.60000610351562" startY="3.0517578125E-5" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0" />
+        <Line endX="-47.400001525878906" layoutX="141.0" layoutY="360.0" startX="-100.0" stroke="WHITE" strokeLineCap="ROUND" strokeWidth="3.0" />
+        <Button layoutX="535.0" layoutY="390.0" mnemonicParsing="false" onAction="#loadJobList" prefWidth="100.0" styleClass="lion" stylesheets="@../sample.css" text="Browse" />
+    </children>
+</AnchorPane>

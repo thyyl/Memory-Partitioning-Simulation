@@ -1,0 +1,39 @@
+.root {
+    -fx-border-color: #FFFFFF;
+    -fx-background-color: linear-gradient(#f5f7fa, #c3cfe2);
+}
+
+.dark {
+    -fx-background-color: #312D2D;
+}
+
+.gradient {
+    -fx-border-color: #FFFFFF;
+    -fx-background-color: linear-gradient(#cfd9df, #e2ebf0);
+}
+
+.white {
+    -fx-border-color: #FFFFFF;
+}
+
+.glass-grey {
+    -fx-background-color:
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+.lion {
+    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#9a9a9a, #909090),
+        linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 12px;
+}
